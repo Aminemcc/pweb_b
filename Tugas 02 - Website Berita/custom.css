@@ -1,0 +1,103 @@
+body{
+    background-color: #f3f3f3;
+    color:#333;
+    width: 100%;
+    font-family: sans-serif;
+    margin: 0 auto;
+}
+
+.header{
+    width: 90%;
+    margin: auto;
+    height: 120px;
+    line-height: 120px;
+    background: #81a841;
+    color: #fff;
+}
+
+.content{
+    width: 90%;
+    margin: auto;
+    height: 420px;
+    padding: 0.1px;
+    background: #fff;
+    color: #333;
+}
+
+.kiri{
+    width: 70%;
+    float: left;
+    margin: auto;
+    background: #fff;
+    height: 420px;
+}
+
+.kanan{
+    width: 30%;
+    float: left;
+    margin: auto;
+    background: #fff;
+    height: 420px;
+}
+
+.border{
+    border: 2px solid #b2c574;
+    margin-top:1pc;
+    padding-bottom: 1pc;
+    padding-left: 2pc;
+    padding-right: 2pc;
+}
+
+.undecor{
+    text-decoration: none;
+}
+
+.footer{
+    width: 90%;
+    margin: auto;
+    height: 40px;
+    line-height: 40px;
+    background: #81a841;
+    color: #fff;
+}
+
+.menu{
+    background-color: #fff;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.jarak{
+    padding: 0 2pc;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1px;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+.menu  li {
+    float: left;
+  }
+  
+.menu ul li a {
+    float: left;
+    display: block;
+    color: fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+.menu ul li a:hover {
+    background-color: #74c599;
+    display: block;
+  }
