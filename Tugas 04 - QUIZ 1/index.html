@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./index.css">
+  <title>Formulir Pendaftaran</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <form class="form" name="myForm">
+      <div class="pageTitle title">Formulir Pendaftaran </div>
+      <div class="secondaryTitle title">Pekan Olahraga dan Seni Guru TKA/TPA Tahun 2020</div>
+      <input type="text" id="nama" class="name formEntry" placeholder="Nama Peserta" style="color:black" />
+      <input type="text" id="tempat" class="place formEntry" placeholder="Tempat Kelahiran" style="color:black" />
+      <input type="Date" id="tanggal" class="date formEntry" placeholder="Tanggal Kelahiran" style="color:black" />
+      <input type="text" id="utusan" class="utusan formEntry" placeholder="Utusan Unit TKA/TPA" style="color:black" />
+      <input type="text" id="kelurahan" class="kelurahan formEntry" placeholder="Kelurahan/Desa" style="color:black" />
+      <input type="text" id="kecamatan" class="Kecamatan formEntry" placeholder="Kecamatan" style="color:black" />
+      <input type="number" id="telepon" class="phone formEntry" placeholder="Nomor Telepon" style="color:black" />
+      <select class="competition formEntry" id="competition" >
+        <option value="Pilih Jenis Lomba" style="font-weight: bold;">Jenis Lomba</option>
+        <option value="Tarik Tambang">Tarik Tambang (4 Perempuan + 1 Laki = 5 Orang)</option>
+        <option value="Lari Estafet">Lari Estafet</option>
+        <option value="Gobak Sodor">Gobak Sodor (4 Perempuan)</option>
+        <option value="Tartil">Tartil (1 orang perwakilan TKA/TPA)</option>
+        <option value="Ceramah">Ceramah (1 orang perwakilan TKA/TPA)</option>
+      </select>
+      <label for="ketua" style="padding-left: 90px;">Tanda Tangan Persetujuan Kepala Unit TKA/TPA</label>
+      <input type="file" class="ketua formEntry" style="margin-top: 5px;" >
+      <label for="peserta" style="padding-left: 90px;">Tanda Tangan Persetujuan Peserta</label>
+      <input type="file" class="ketua formEntry" style="margin-top: 5px;" >
+
+      <button class="submit formEntry">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>
