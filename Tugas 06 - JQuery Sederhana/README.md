@@ -1,5 +1,4 @@
 # Latihan JQuery
-Nama  : Helsa Nesta Dhaifullah <br>
-NRP   : 5025201005 <br>
-Kelas : PWEB-B <br>
-Tahun : 2022 <br>
+Nama  : Muhammad Amin <br>
+NRP   : 5025201251 <br>
+Kelas : PWEB-B-2022<br>
