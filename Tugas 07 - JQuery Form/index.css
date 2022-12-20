@@ -1,0 +1,195 @@
+/* Fonts */
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('opensans-regular-webfont.woff2') format('woff2'),
+         url('opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-style: normal;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom CSS */
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(104, 103, 103);
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: whitesmoke;
+    border-radius: 3rem;
+    margin: 5em 24em;
+    padding: 3em 3em;
+    width: 100%;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 1em;
+}
+
+/* form {
+    display: flex;
+    /* background-color: aqua; */
+    /* height: 100%;
+    width: 100%;
+}  */
+
+.formcard {
+    padding: 0.5em 0;
+}
+
+.formcard-submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5em 0;
+}
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* background-color: wheat; */
+    margin: 0 1em;
+    padding: 2.5em 0;
+    height: auto;
+    width: 50%;
+}
+
+.form-control {
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+    height: fit-content;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+label, input, select{
+    display:flex;
+    margin-bottom: 0.5em;
+}
+
+label {
+    color: gray;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+.formcard input, .formcard textarea{
+    padding: 0 0.5em;
+    border-radius: 8px;
+    font-size: large;
+    font-weight: bold;
+    height: 30px;
+    border: 1px solid lightgray;
+    width: 100%;
+}
+
+.formcard textarea {
+    padding: 0.5em 0.5em;
+    height: auto;
+}
+
+select {
+    height: 32px;
+}
+
+.formcard-submit input {
+    justify-content: center;
+    border: none;
+    background-color: rgb(0, 114, 124);
+    color: whitesmoke;
+    border-radius: 8px;
+    font-size: large;
+    font-weight: bold;
+    height: 35px;
+    width: 120px;
+}
+
+.formcard-submit input:hover{
+    cursor:pointer;
+    background-color: rgb(117, 255, 117);
+}
+
+.form-control-button {
+    display:flex;
+    justify-content: end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: left;
+    height: fit-content;
+    width: 100%;
+    margin-top: 200px;
+    margin-bottom: 25px;
+}
+
+label.error {
+    color: #ff4655;
+}

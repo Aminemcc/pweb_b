@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendataan Mahasiswa</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1><center>PENDATAAN</br>MAHASISWA</center></h1>
+            <form id="indform">
+                <div class="formcard">
+                    <label for="nim" class="labelfrm">NIM </label>
+                    <input class="required" type="text" name="nim" id="nim" maxlength="10" size="15"/>
+                </div>
+                <div class="formcard">
+                    <label for="nama" class="labelfrm">NAMA </label>
+                    <input class="required" type="text" name="nama" id="nama" size="30"/>
+                </div>
+                <div class="formcard">
+                    <label for="alamat" class="labelfrm">ALAMAT </label>
+                    <textarea class="required" name="alamat" id="alamat" rows="2"></textarea>
+                </div>
+                <div class="formcard">
+                    <label for="tgl" class="labelfrm">TANGGAL LAHIR </label>
+                    <input class="required" type="text" name="tgl" id="tgl" maxlength="10" size="15"/>
+                </div>
+                <div class="formcard">
+                    <label for="umur" class="labelfrm">UMUR </label>
+                    <input class="required" type="text" name="umur" id="umur" maxlength="3" size="7"/>
+                </div>
+                <div class="formcard">
+                    <label for="email" class="labelfrm">ALAMAT EMAIL </label>
+                    <input class="required" type="text" name="email" id="email" size="50"/>    
+                </div>
+                <div class="formcard">
+                    <label for="situs" class="labelfrm">ALAMAT SITUS </label>
+                    <input class="required" type="text" name="situs" id="situs" size="50"/>    
+                </div>
+                <div class="formcard">
+                    <label for="pass1" class="labelfrm">PASSWORD </label>
+                    <input class="required" type="password" name="pass1" id="pass1" size="15"/>    
+                </div>
+                <div class="formcard">
+                    <label for="pass2" class="labelfrm">KONFIRMASI PASSWORD </label>
+                    <input class="required" type="password" name="pass2" id="pass2" size="15"/>
+                </div>
+                <div class="formcard-submit">
+                    <label for="submit" class="labelfrm">&nbsp;</label>
+                    <input type="submit" name="Submit" value="Login"/>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('#indform').validate({
+                rules: {
+                    nim : {
+                        digits: true,
+                        minlength: 10,
+                        maxlength: 10
+                    },
+                    tgl: {
+                        indonesianDate: true
+                    },
+                    umur: {
+                        digits: true,
+                        range: [1, 100]
+                    },
+                    email: {
+                        email: true
+                    },
+                    situs: {
+                        url: true
+                    },
+                    pass2: {
+                        equalTo: "#pass1"
+                    }
+                }
+            });
+
+            $.validator.addMethod(
+                "indonesianDate",
+                function(value, element) {
+                    return value.match(/^\d\d?\/\d\d?\/\d\d\d\d$/);
+                },
+                "Please enter a date in the format DD/MM/YYYY"
+            );
+        });
+    </script>
+</body>
+</html>
