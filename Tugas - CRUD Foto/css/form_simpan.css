@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', cursive;
+    background-color: #252525;
+    color: #EDEDED;
+}
+
+h1 {
+    color: #EDEDED;
+    font-size: 56px;
+    font-weight: bold;
+    font-family: "Nerko One", cursive;
+    text-align: center;
+    margin-top: 50px;
+}
+
+table {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    text-align: left;
+    border: 1px solid #EDEDED;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(183, 141, 3, 0.5);
+    width:50%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table tr {
+    border-bottom: 1px solid #EDEDED;
+    background-color: #252525;
+    color: #EDEDED;
+}
+
+table tr td {
+    padding: 12px 15px;
+    font-weight: 400;
+}
+
+hr {
+    border: 1px solid #EDEDED;
+    width: 50%;
+}
+
+input[type=submit] {
+    background-color: #62529c;
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-align: center;
+}
+
+input[type=button] {
+    background-color: #62529c;
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button_akhir {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
